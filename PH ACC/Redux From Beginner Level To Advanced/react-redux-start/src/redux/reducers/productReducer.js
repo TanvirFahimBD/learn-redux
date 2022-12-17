@@ -1,7 +1,18 @@
-const initialState = {}
+import { ADD_TO_CART, REMOVE_FROM_CART } from "../actionTypes/actionTypes";
 
-const productReducer = (state = initialState, action) => {
-    return;
+export const initialState = {
+    cart: []
 }
 
-export default productReducer;
+export const productReducer = (state = initialState, action) => {
+    switch (action.type) {
+        case ADD_TO_CART: {
+            return {}
+        }
+        case REMOVE_FROM_CART: {
+            return {}
+        }
+        default: return state;
+    }
+
+}
